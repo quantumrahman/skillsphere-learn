@@ -2,6 +2,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "../globals.css";
 
 import Header from "@/components/shared/Header/Header";
+import Footer from "@/components/shared/Footer/Footer";
 
 const geist = Geist({
     variable: "--font-geist-sans",
@@ -15,7 +16,7 @@ const geist_mono = Geist_Mono({
 
 export const metadata = {
     title: "SkillSphere - Online Learning Platform.",
-    description: "SkillSphere online learing platform."
+    description: "SkillSphere online learning platform."
 };
 
 export default function MainLayout({ children }) {
@@ -23,6 +24,7 @@ export default function MainLayout({ children }) {
         <main className={`${geist.variable} ${geist_mono.variable} w-full min-h-screen antialiased`}>
             <Header />
             {children}
+            <Footer />
         </main>
     );
 };

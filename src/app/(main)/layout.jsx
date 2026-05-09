@@ -18,7 +18,7 @@ export const metadata = {
 
 export default function MainLayout({ children }) {
     return (
-        <main className={`${geist.variable} ${geist_mono.variable} w-screen min-h-screen antialiased`}>
+        <main className={`${geist.variable} ${geist_mono.variable} w-full min-h-screen antialiased`}>
             {children}
         </main>
     );

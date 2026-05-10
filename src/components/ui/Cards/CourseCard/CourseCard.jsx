@@ -1,10 +1,20 @@
+"use client";
+
 import { 
     RiArrowRightUpLongLine, 
     RiStarFill 
 } from "@remixicon/react";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 const CourseCard = ({ course }) => {
+    const router = useRouter();
+
+    const handleViewDetails = (params) => {
+        const urlFormat = params.split(" ").join("-").toLowerCase();
+        
+        router.push(`/courses/course-details/${urlFormat}`);
+    };
     
     return (
         <div className="w-full p-4 border border-[#242424] rounded-xl flex flex-col gap-4 group cursor-pointer md:p-6">
@@ -40,7 +50,9 @@ const CourseCard = ({ course }) => {
                     <span className="text-base font-normal text-white mt-0.5">{course.rating}</span>
                 </div>
             </div>
-            <button className="w-fit text-base font-normal text-[#8e8e8e] mx-auto cursor-pointer flex items-center justify-center  group-hover:text-blue-500 mt-2">
+            <button 
+                onClick={() => handleViewDetails(course.title)}
+                className="w-fit text-base font-normal text-[#8e8e8e] mx-auto cursor-pointer flex items-center justify-center  group-hover:text-blue-500 mt-2">
                 View details
                 <RiArrowRightUpLongLine size={16} className="text-[#8e8e8e] transition-transform duration-300 ease-in-out group-hover:text-blue-500" />
             </button>

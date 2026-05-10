@@ -35,7 +35,7 @@ const Header = () => {
 
     return (
         <div className="w-full relative">
-            <div className="w-full px-5 py-3.5 bg-[#0a0a0a] border-b border-[#242424] fixed top-0 left-0">
+            <div className="w-full px-5 py-3.5 bg-[#0a0a0a] border-b border-[#242424] fixed top-0 left-0 z-40">
                 <div className="w-full max-w-[1400px] mx-auto">
                     <header className="w-full flex items-center justify-between">
                         <div className="w-fit flex items-center justify-center gap-10">
@@ -88,7 +88,7 @@ const Header = () => {
                     </header>
                 </div>
             </div>
-            <div className={`w-full max-w-[375px] h-full bg-[#0a0a0a] fixed top-0 right-0 transform transition-transform duration-300 ease-linear md:hidden 
+            <div className={`w-full max-w-[375px] h-full bg-[#0a0a0a] fixed top-0 right-0 transform transition-transform duration-300 ease-linear md:hidden z-50
                 ${toggleMenu 
                     ? "translate-x-0" 
                     : "translate-x-full"

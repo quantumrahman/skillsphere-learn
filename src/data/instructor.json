@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "instructor_name": "Jane Smith",
+    "instructor_expertise": "Developer",
+    "instructor_rating": 4.8,
+    "instructor_image": "/images/instructors/jane.webp"
+  },
+  {
+    "id": 2,
+    "instructor_name": "Amy Williams",
+    "instructor_expertise": "UI/UX Design",
+    "instructor_rating": 4.7,
+    "instructor_image": "/images/instructors/amy.webp"
+  },
+  {
+    "id": 3,
+    "instructor_name": "John Brown",
+    "instructor_expertise": "Data Science & AI",
+    "instructor_rating": 4.9,
+    "instructor_image": "/images/instructors/john.webp"
+  },
+  {
+    "id": 4,
+    "instructor_name": "David Johnson",
+    "instructor_expertise": "Digital Marketing",
+    "instructor_rating": 4.6,
+    "instructor_image": "/images/instructors/david.webp"
+  }
+]

@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "title": "Web Dev Bootcamp",
+    "instructor": "Jane Smith",
+    "instructorImage": "/images/instructors/jane.webp",
+    "duration": "20 hours",
+    "rating": 4.8,
+    "level": "Beginner",
+    "description": "Learn full-stack web development from scratch using modern tools.",
+    "image": "/images/courses/web.webp",
+    "category": "Development"
+  },
+  {
+    "id": 2,
+    "title": "React JS Mastery",
+    "instructor": "Amy Williams",
+    "instructorImage": "/images/instructors/amy.webp",
+    "duration": "15 hours",
+    "rating": 4.7,
+    "level": "Intermediate",
+    "description": "Build dynamic and scalable web apps using React and hooks.",
+    "image": "/images/courses/react.webp",
+    "category": "Frontend"
+  },
+  {
+    "id": 3,
+    "title": "Node & Express API",
+    "instructor": "John Brown",
+    "instructorImage": "/images/instructors/john.webp",
+    "duration": "18 hours",
+    "rating": 4.6,
+    "level": "Intermediate",
+    "description": "Create RESTful APIs and backend services with Node.js and Express.",
+    "image": "/images/courses/node.webp",
+    "category": "Backend"
+  },
+  {
+    "id": 4,
+    "title": "JavaScript for Beginners",
+    "instructor": "David Johnson",
+    "instructorImage": "/images/instructors/david.webp",
+    "duration": "12 hours",
+    "rating": 4.9,
+    "level": "Beginner",
+    "description": "Master JavaScript fundamentals and start building interactive websites.",
+    "image": "/images/courses/javascript.webp",
+    "category": "Programming"
+  },
+  {
+    "id": 5,
+    "title": "Advanced Tailwind CSS Design",
+    "instructor": "Amy Williams",
+    "instructorImage": "/images/instructors/amy.webp",
+    "duration": "10 hours",
+    "rating": 4.7,
+    "level": "Advanced",
+    "description": "Design modern and responsive UI using Tailwind CSS efficiently.",
+    "image": "/images/courses/tailwind.webp",
+    "category": "UI/UX"
+  },
+  {
+    "id": 6,
+    "title": "MongoDB & Database Design",
+    "instructor": "Jane Smith",
+    "instructorImage": "/images/instructors/jane.webp",
+    "duration": "14 hours",
+    "rating": 4.5,
+    "level": "Intermediate",
+    "description": "Learn NoSQL database design and data modeling with MongoDB.",
+    "image": "/images/courses/database.webp",
+    "category": "Database"
+  }
+]

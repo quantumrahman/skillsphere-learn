@@ -1,11 +1,14 @@
 import { 
     RiSearchLine
 } from "@remixicon/react";
+import { 
+    getCourses 
+} from "@/utils/get.courses";
 import CourseCard from "@/components/ui/Cards/CourseCard/CourseCard";
 import InstructorSection from "@/components/sections/InstructorSection/InstructorSection";
 
-
-const CoursesPage = () => {
+const CoursesPage = async () => {
+    const courses = await getCourses();
 
     return (
         <div className="w-full min-h-[calc(100vh-405px)] pt-[65px] px-5">
@@ -30,12 +33,9 @@ const CoursesPage = () => {
                         </div>
                     </div>
                     <div className="w-full grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-5 lg:grid-cols-3 lg:gap-6 mt-7">
-                        <CourseCard />
-                        <CourseCard />
-                        <CourseCard />
-                        <CourseCard />
-                        <CourseCard />
-                        <CourseCard />
+                        {courses.map((course, idx) => (
+                            <CourseCard key={idx} course={course}/>
+                        ))}
                     </div>
                 </div>
                 <div className="w-full h-px bg-[#242424]"></div>

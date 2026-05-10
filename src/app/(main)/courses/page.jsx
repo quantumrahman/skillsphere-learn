@@ -1,16 +1,16 @@
 import { 
-    RiSearchLine, 
-    RiStarFill,
-    RiArrowRightUpLongLine
+    RiSearchLine
 } from "@remixicon/react";
 import CourseCard from "@/components/ui/Cards/CourseCard/CourseCard";
+import InstructorSection from "@/components/sections/InstructorSection/InstructorSection";
+
 
 const CoursesPage = () => {
 
     return (
         <div className="w-full min-h-[calc(100vh-405px)] pt-[65px] px-5">
             <div className="w-full max-w-[1300px] mx-auto mt-[120px]">
-                <div className="flex flex-col gap-6">
+                <div className="flex flex-col gap-6 pb-8 md:pb-[80px]">
                     <div className="flex flex-col gap-4">
                         <h1 className="text-[32px] font-semibold text-white leading-10">Find the Right Course for You</h1>
                         <p className="text-base font-normal text-[#8e8e8e]">Browse curated courses from industry experts and start building skills that matter in real-world projects.</p>
@@ -38,6 +38,8 @@ const CoursesPage = () => {
                         <CourseCard />
                     </div>
                 </div>
+                <div className="w-full h-px bg-[#242424]"></div>
+                <InstructorSection />
             </div>
         </div>
     );

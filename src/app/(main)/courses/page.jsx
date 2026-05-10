@@ -1,4 +1,9 @@
-import { RiSearchLine } from "@remixicon/react";
+import { 
+    RiSearchLine, 
+    RiStarFill,
+    RiArrowRightUpLongLine
+} from "@remixicon/react";
+import CourseCard from "@/components/ui/Cards/CourseCard/CourseCard";
 
 const CoursesPage = () => {
 
@@ -18,11 +23,19 @@ const CoursesPage = () => {
                             name="search" 
                             aria-label="input" 
                             autoComplete="off" role="search"
-                            className="w-full py-3.5 pl-12 bg-[#111111] rounded-md border border-[#ffffff17] text-sm font-normal text-white placeholder:text-[#8e8e8e] focus:outline-none focus:border-[#ffffff24]"
+                            className="w-full py-3.5 pl-12 bg-[#0a0a0a] rounded-md border border-[#ffffff17] text-sm font-normal text-white placeholder:text-[#8e8e8e] focus:outline-none focus:border-[#ffffff24]"
                         />
                         <div className="absolute top-1/2 left-4 -translate-y-1/2">
                             <RiSearchLine size={20} color="#8e8e8e" />
                         </div>
+                    </div>
+                    <div className="w-full grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-5 lg:grid-cols-3 lg:gap-6 mt-7">
+                        <CourseCard />
+                        <CourseCard />
+                        <CourseCard />
+                        <CourseCard />
+                        <CourseCard />
+                        <CourseCard />
                     </div>
                 </div>
             </div>
